@@ -20,7 +20,8 @@
     </header>
 
     <main>
-    <p></p>
+      <!-- Add paragraph later -->
+      <p></p>
       <!-- 
       This is the start of the form.
       This form is a survey used for gathering data about the users and feedback on the site.
@@ -29,7 +30,7 @@
       The GET method will display survey results at the URL end once the results are submitted.
       -->
       <form name="video_ports_survey" id="survey" method="GET">
-      <!-- Question 1 asks if you use video ports. There are three radio buttions with the following options: Yes, No and Maybe.-->
+        <!-- Question 1 asks if you use video ports. There are three radio buttions with the following options: Yes, No and Maybe.-->
         <p>Do you use video ports?</p>
 
         <!--
@@ -38,7 +39,12 @@
         The name attribute is "video_ports_use", meaning it is an answer to the question,
         It will be the value of the question in the URL if the user picks this option.
         -->
-        <input id="yes" value="yes" type="radio" name="video_ports_use" required />
+        <input
+          id="yes"
+          value="yes"
+          type="radio"
+          name="video_ports_use"
+          required />
         <!--
         This is a label displaying the text "Yes".
         It has a "for" attribute of "yes", linking it to the above radio input for screen readers.
@@ -52,7 +58,12 @@
         The name attribute is "video_ports_use", meaning it is an answer to the question,
         It will be the value of the question in the URL if the user picks this option.
         -->
-        <input id="no" value="no" type="radio" name="video_ports_use" required />
+        <input
+          id="no"
+          value="no"
+          type="radio"
+          name="video_ports_use"
+          required />
         <!--
         This is a label displaying the text "No".
         It has a "for" attribute of "no", linking it to the above radio input for screen readers.
@@ -66,7 +77,12 @@
         The name attribute is "video_ports_use", meaning it is an answer to the question,
         It will be the value of the question in the URL if the user picks this option.
         -->
-        <input id="dunno" value="dont_know" type="radio" name="video_ports_use" required />
+        <input
+          id="dunno"
+          value="dont_know"
+          type="radio"
+          name="video_ports_use"
+          required />
         <!--
         This is a label displaying the text "I Don't Know".
         It has a "for" attribute of "dunno", linking it to the above radio input for screen readers.
@@ -131,7 +147,9 @@
         This is a label displaying the text "HDMI" alonside "(High-Definition Multimedia Interface)" in italics.
         It has a "for" attribute of "hdmi", linking it to the above radio input for screen readers.
         -->
-        <label for="hdmi">HDMI <i>(High-Definition Multimedia Interface)</i></label>
+        <label for="hdmi"
+          >HDMI <i>(High-Definition Multimedia Interface)</i></label
+        >
 
         <br />
         <!--
