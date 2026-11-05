@@ -31,11 +31,11 @@
         NOT BE SECURED.
       </h3>
       <!-- 
-      This is the start of the form.
-      This form is a survey used for gathering data about the users and feedback on the site.
-      The name dictates the name of the survey when it is submitted.
-      The ID allows us to link form inputs to the form.
-      The GET method will display survey results at the URL end once the results are submitted.
+        This is the start of the form.
+        This form is a survey used for gathering data about the users and feedback on the site.
+        The name dictates the name of the survey when it is submitted.
+        The ID allows us to link form inputs to the form.
+        The GET method will display survey results at the URL end once the results are submitted.
       -->
       <form name="video_ports_survey" id="survey" method="GET">
         <section>
@@ -43,11 +43,12 @@
           <p>Do you use video ports?</p>
 
           <!--
-        This is a radio input. It has an ID of "yes", linking it to the label.
-        It have a value of "yes", meaning its answer in the subbmitted URL will be displayed as "yes".
-        The name attribute is "video_ports_use", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "yes", linking it to the label.
+            It have a value of "yes", meaning its answer in the subbmitted URL will be displayed as "yes".
+            The name attribute is "video_ports_use", meaning it is an answer to the question,
+            It has a "required" attribute. meaning that you need to answer one of the radio buttons
+            of that question before submitting the survey answers.
+          -->
           <input
             id="yes"
             value="yes"
@@ -55,18 +56,19 @@
             name="video_ports_use"
             required />
           <!--
-        This is a label displaying the text "Yes".
-        It has a "for" attribute of "yes", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "Yes".
+            It has a "for" attribute of "yes", linking it to the above radio input for screen readers.
+          -->
           <label for="yes">Yes</label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "no", linking it to the label.
-        It have a value of "no", meaning its answer in the subbmitted URL will be displayed as "no".
-        The name attribute is "video_ports_use", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "no", linking it to the label.
+            It have a value of "no", meaning its answer in the subbmitted URL will be displayed as "no".
+            The name attribute is "video_ports_use", meaning it is an answer to the question,
+            It has a "required" attribute. meaning that you need to answer one of the radio buttons
+            of that question before submitting the survey answers.
+          -->
           <input
             id="no"
             value="no"
@@ -74,18 +76,19 @@
             name="video_ports_use"
             required />
           <!--
-        This is a label displaying the text "No".
-        It has a "for" attribute of "no", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "No".
+            It has a "for" attribute of "no", linking it to the above radio input for screen readers.
+          -->
           <label for="no">No</label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "dunno", linking it to the label.
-        It have a value of "dont_know", meaning its answer in the subbmitted URL will be displayed as "dont_know".
-        The name attribute is "video_ports_use", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "dunno", linking it to the label.
+            It have a value of "dont_know", meaning its answer in the subbmitted URL will be displayed as "dont_know".
+            The name attribute is "video_ports_use", meaning it is an answer to the question,
+            It has a "required" attribute. meaning that you need to answer one of the radio buttons
+            of that question before submitting the survey answers.
+          -->
           <input
             id="dunno"
             value="dont_know"
@@ -93,119 +96,115 @@
             name="video_ports_use"
             required />
           <!--
-        This is a label displaying the text "I Don't Know".
-        It has a "for" attribute of "dunno", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "I Don't Know".
+            It has a "for" attribute of "dunno", linking it to the above radio input for screen readers.
+          -->
           <label for="dunno">I Don't Know</label>
         </section>
         <br />
         <section>
-          <!-- Question 2 asks  the main type of video port you use (If you know you use video ports).
-        There are five radio buttions with the following options: RCA, VGA, DVI, HDMI and DP.-->
+          <!-- 
+            Question 2 asks  the main type of video port you use (If you know you use video ports).
+            There are five radio buttions with the following options: RCA, VGA, DVI, HDMI and DP.
+          -->
           <p>If so, what is the main type of video port you use?</p>
           <!--
-        This is a radio input. It has an ID of "rca", linking it to the label.
-        It have a value of "rca", meaning its answer in the subbmitted URL will be displayed as "rca".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "rca", linking it to the label.
+            It have a value of "rca", meaning its answer in the subbmitted URL will be displayed as "rca".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
           <input id="rca" value="rca" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "RCA" alonside "(Radio Corporation of America)" in italics.
-        It has a "for" attribute of "rca", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "RCA" alonside "(Radio Corporation of America)" in italics.
+            It has a "for" attribute of "rca", linking it to the above radio input for screen readers.
+          -->
           <label for="rca">RCA <i>(Radio Corporation of America)</i> </label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "vga", linking it to the label.
-        It have a value of "vga", meaning its answer in the subbmitted URL will be displayed as "vga".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "vga", linking it to the label.
+            It have a value of "vga", meaning its answer in the subbmitted URL will be displayed as "vga".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
           <input id="vga" value="vga" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "VGA" alonside "(Video Graphics Array)" in italics.
-        It has a "for" attribute of "vga", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "VGA" alonside "(Video Graphics Array)" in italics.
+            It has a "for" attribute of "vga", linking it to the above radio input for screen readers.
+          -->
           <label for="vga">VGA <i>(Video Graphics Array)</i> </label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "dvi", linking it to the label.
-        It have a value of "dvi", meaning its answer in the subbmitted URL will be displayed as "dvi".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "dvi", linking it to the label.
+            It have a value of "dvi", meaning its answer in the subbmitted URL will be displayed as "dvi".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
           <input id="dvi" value="dvi" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "DVI" alonside "(Digital Video Interface)" in italics.
-        It has a "for" attribute of "dvi", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "DVI" alonside "(Digital Video Interface)" in italics.
+            It has a "for" attribute of "dvi", linking it to the above radio input for screen readers.
+          -->
           <label for="dvi">DVI <i>(Digital Video Interface)</i></label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "hdmi", linking it to the label.
-        It have a value of "hdmi", meaning its answer in the subbmitted URL will be displayed as "hdmi".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "hdmi", linking it to the label.
+            It have a value of "hdmi", meaning its answer in the subbmitted URL will be displayed as "hdmi".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
           <input id="hdmi" value="hdmi" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "HDMI" alonside "(High-Definition Multimedia Interface)" in italics.
-        It has a "for" attribute of "hdmi", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "HDMI" alonside "(High-Definition Multimedia Interface)" in italics.
+            It has a "for" attribute of "hdmi", linking it to the above radio input for screen readers.
+          -->
           <label for="hdmi"
             >HDMI <i>(High-Definition Multimedia Interface)</i></label
           >
 
           <br />
           <!--
-        This is a radio input. It has an ID of "dp", linking it to the label.
-        It have a value of "dp", meaning its answer in the subbmitted URL will be displayed as "dp".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "dp", linking it to the label.
+            It have a value of "dp", meaning its answer in the subbmitted URL will be displayed as "dp".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
           <input id="dp" value="dp" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "DP" alonside "(DisplayPort)" in italics.
-        It has a "for" attribute of "dp", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "DP" alonside "(DisplayPort)" in italics.
+            It has a "for" attribute of "dp", linking it to the above radio input for screen readers.
+          -->
           <label for="dp">DP <i>(DisplayPort)</i></label>
 
           <br />
           <!--
-        This is a radio input. It has an ID of "other", linking it to the label.
-        It have a value of "other", meaning its answer in the subbmitted URL will be displayed as "other".
-        The name attribute is "video_type", meaning it is an answer to the question,
-        It will be the value of the question in the URL if the user picks this option.
-        -->
+            This is a radio input. It has an ID of "other", linking it to the label.
+            It have a value of "other", meaning its answer in the subbmitted URL will be displayed as "other".
+            The name attribute is "video_type", meaning it is an answer to the question,
+          -->
 
           <input id="other" value="other" type="radio" name="video_type" />
           <!--
-        This is a label displaying the text "Other".
-        It has a "for" attribute of "other", linking it to the above radio input for screen readers.
-        -->
+            This is a label displaying the text "Other".
+            It has a "for" attribute of "other", linking it to the above radio input for screen readers.
+          -->
           <label for="other">Other</label>
 
           <br />
         </section>
         <br />
         <!--
-        This is a label displaying the text "Why do you use this video port?".
-        It has a "for" attribute of "why", linking it to the below textarea input for screen readers.
+          This is a label displaying the text "Why do you use this video port?".
+          It has a "for" attribute of "why", linking it to the below textarea input for screen readers.
         -->
         <section>
           <label for="why">Why do you use this video port?</label>
 
           <br />
           <!--
-        This is a textarea. It is an expandable text box.
-        It has an ID of "why", linking it to the above label.
-        It has a "name" attribute of "why_video_port", which is what the question is displayed as at the end of the URL.
-        It has attributes changing its size to 20 columns and 4 rows.
-        -->
+            This is a textarea. It is an expandable text box.
+            It has an ID of "why", linking it to the above label.
+            It has a "name" attribute of "why_video_port", which is what the question is displayed as at the end of the URL.
+            It has attributes changing its size to 20 columns and 4 rows.
+          -->
           <textarea
             id="why"
             name="why_video_port"
@@ -215,66 +214,66 @@
         <br />
         <fieldset>
           <!--
-          This fieldset is named "Miscellaneous Questions" by the <legend> tag.
+            This fieldset is named "Miscellaneous Questions" by the <legend> tag.
           -->
           <legend>Miscellaneous Questions</legend>
           <!--
-          This label is linked to the "favcolor" ID using the "for" attribute.
-          This label displays the question between the start and end tags
-          It says "What is your favorite color?" followed by a non-breaking space
-          The non-breaking space is here because a normal space will be corrected by the Prettier extension.
+            This label is linked to the "favcolor" ID using the "for" attribute.
+            This label displays the question between the start and end tags
+            It says "What is your favorite color?" followed by a non-breaking space
+            The non-breaking space is here because a normal space will be corrected by the Prettier extension.
           -->
           <section>
             <label for="favcolor">What is your favorite color? &nbsp</label>
             <!--
-          This input is a color type. It displays as a color picker on the page.
-          When the form is submitted, the "value" will be displayed as the color
-          picked by the user in hex code (#XXXXXX, or in this case &23XXXXXX)
-          The ID is "favcolor", linking it to the label.
-          The name is also "favcolor", which is what the question is displayed as
-          when it is submitted at the end of the URL.
-          -->
+              This input is a color type. It displays as a color picker on the page.
+              When the form is submitted, the "value" will be displayed as the color
+              picked by the user in hex code (#XXXXXX, or in this case &23XXXXXX)
+              The ID is "favcolor", linking it to the label.
+              The name is also "favcolor", which is what the question is displayed as
+              when it is submitted at the end of the URL.
+            -->
             <input type="color" id="favcolor" name="fav_color" />
           </section>
           <br />
           <section>
             <!--
-          This label is linked to the "favmonthyear" ID using the "for" attribute.
-          This label displays the question between the start and end tags
-          It says "What is your favorite month and year?" followed by a non-breaking space
-          The non-breaking space is here because a normal space will be corrected by the Prettier extension
-          The formatting is wonky here because the Prettier extension always corrects it like this.
-          -->
+              This label is linked to the "favmonthyear" ID using the "for" attribute.
+              This label displays the question between the start and end tags
+              It says "What is your favorite month and year?" followed by a non-breaking space
+              The non-breaking space is here because a normal space will be corrected by the Prettier extension
+              The formatting is wonky here because the Prettier extension always corrects it like this.
+            -->
             <label for="favmonthyear"
               >What is your favorite month and year? &nbsp</label
             >
             <!--
-          This input is a month type. It displays month and year picker on the page.
-          When the form is submitted, the "value" will be displayed as the month and year
-          picked by the user in the format XXXX-YY, XXXX representing the year and YY representing the number of the month.
-          The ID is "favmonthyear", linking it to the label.
-          The name is also "favmonthyear", which is what the question is displayed as
-          when it is submitted at the end of the URL.
-          -->
+              This input is a month type. It displays month and year picker on the page.
+              When the form is submitted, the "value" will be displayed as the month and year
+              picked by the user in the format XXXX-YY, XXXX representing the year and YY representing the number of the month.
+              The ID is "favmonthyear", linking it to the label.
+              The name is also "favmonthyear", which is what the question is displayed as
+              when it is submitted at the end of the URL.
+            -->
             <input type="month" id="favmonthyear" name="fav_month_year" />
           </section>
           <br />
           <section>
             <!--
-          This label is linked to the "dogphone" ID using the "for" attribute.
-          This label displays the question between the start and end tags
-          It says "What is your dog's phone number?" followed by a non-breaking space
-          The non-breaking space is here because a normal space will be corrected by the Prettier extension.
-          -->
+              This label is linked to the "dogphone" ID using the "for" attribute.
+              This label displays the question between the start and end tags
+              It says "What is your dog's phone number?" followed by a non-breaking space
+              The non-breaking space is here because a normal space will be corrected by the Prettier extension.
+            -->
             <label for="dogphone">What is your dog's phone number? &nbsp</label>
             <!--
-          This input is a "tel" type. It displays a textbox on the page.
-          The "tel" type's only difference from the "text" type is that it shows a keypad on cell phones.
-          When the form is submitted, the "value" will be displayed as the text inputted inside the textbox.
-          The ID is "dogphone", linking it to the label.
-          The name is also "dogphone", which is what the question is displayed as
-          when it is submitted at the end of the URL.
-          -->
+              This input is a "tel" type. It displays a textbox on the page.
+              The "tel" type's only difference from the "text" type is that it shows a keypad on cell phones.
+              When the form is submitted, the "value" will be displayed as the text inputted inside the textbox.
+              The ID is "dogphone", linking it to the label.
+              The name is also "dogphone", which is what the question is displayed as
+              when it is submitted at the end of the URL.
+            -->
             <input type="tel" id="dogphone" name="dog_phone" />
           </section>
         </fieldset>
@@ -282,19 +281,19 @@
         <br />
         <section>
           <!--
-        This label is linked to the "misc" ID using the "for" attribute.
-        This label displays the question between the start and end tags
-        It says "Anything else you would like to add?"
-        -->
+            This label is linked to the "misc" ID using the "for" attribute.
+            This label displays the question between the start and end tags
+            It says "Anything else you would like to add?"
+          -->
           <label for="misc">Anything else you would like to add?</label>
 
           <br />
-          <!--
-        This is a <textarea> tag. It provides an input with an extendable text box.
-        It has an ID of "misc", linking it to the label.
-        It has a name attribute of "extra", which is the question's name at the URL's end.
-        The tag has attributes that make it 9 rows tall and 40 columns long.
-        -->
+          <!--s
+          This is a <textarea> tag. It provides an input with an extendable text box.
+          It has an ID of "misc", linking it to the label.
+          It has a name attribute of "extra", which is the question's name at the URL's end.
+          The tag has attributes that make it 9 rows tall and 40 columns long.
+          -->
           <textarea id="misc" name="extra" cols="40" rows="9"></textarea>
         </section>
         <br />
